@@ -88,14 +88,11 @@
 			</plugin>
 
 			<!-- Simplify the deployment to Google App Engine -->
-			<!-- Command: mvn -DskipTests appengine:deploy -->
+			<!-- Command: mvn package appengine:deploy -Dapp.deploy.projectId=PROJECT_ID -Dapp.deploy.version=VERSION-->
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.2.0</version>
-				<configuration>
-					<deploy.projectId>price-quote-273313</deploy.projectId>
-				</configuration>
 			</plugin>
 
 		</plugins>
