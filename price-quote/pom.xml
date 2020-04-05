@@ -93,6 +93,9 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.2.0</version>
+				<configuration>
+					<deploy.projectId>price-quote-273313</deploy.projectId>
+				</configuration>
 			</plugin>
 
 		</plugins>
