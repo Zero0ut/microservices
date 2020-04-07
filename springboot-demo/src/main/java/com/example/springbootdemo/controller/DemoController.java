@@ -9,11 +9,23 @@ import java.net.UnknownHostException;
 @RestController
 public class DemoController {
     @RequestMapping("/demo")
-    public String hello() {
-        StringBuilder message = new StringBuilder("Hello Google App Engine!");
+    public String demo() {
+        StringBuilder message = new StringBuilder("Welcome GCP App Engine!");
         try {
             InetAddress ip = InetAddress.getLocalHost();
-            message.append(" From host: " + ip);
+            message.append(" from host: " + ip);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        return message.toString();
+    }
+
+    @RequestMapping("/")
+    public String index() {
+        StringBuilder message = new StringBuilder("Default Controller!");
+        try {
+            InetAddress ip = InetAddress.getLocalHost();
+            message.append(" from host: " + ip);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
