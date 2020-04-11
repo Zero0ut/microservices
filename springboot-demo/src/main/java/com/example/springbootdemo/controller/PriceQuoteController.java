@@ -42,6 +42,8 @@ public class PriceQuoteController {
                 logger.info("Retrieving a historical rate as of " + asOfDate);
                 HistoricalQuote histQuote = YahooFinance.get(quote, DateTimeHelper.convert(asOfDate), DateTimeHelper.convert(nextDate)).getHistory().get(0);
                 return new Quote(histQuote.getSymbol(), histQuote.getClose(), histQuote.getClose());
+//            } else if (false) {
+//                stock = YahooFinance.get(null);
             } else {
                 stock = YahooFinance.get(quote);
             }
