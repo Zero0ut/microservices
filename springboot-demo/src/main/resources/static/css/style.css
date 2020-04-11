@@ -1,11 +1,11 @@
-#searchbar {
+.textPanel {
     margin: 5% 5% 5% 5%;
     padding: 10px;
     border-radius: 5px;
 }
 
 input[type=text] {
-  width: 50%;
+  width: 90%;
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;
 }
