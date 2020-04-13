@@ -42,8 +42,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 
-		<!--Required for GCP App Engine -->
+		<!-- Required for GCP App Engine -->
 		<!-- Do not include the Jetty dependencies. But you must include Servlet API dependency -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -77,9 +81,11 @@
 			<version>${yahoo.finance.version}</version>
 		</dependency>
 
+		<!-- Testing & Debug -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
