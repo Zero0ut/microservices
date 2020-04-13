@@ -22,7 +22,7 @@
 		<gcloud-projectId>springboot-demo-273516</gcloud-projectId>
 
 		<yahoo.finance.version>3.15.0</yahoo.finance.version>
-		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<springdoc-openapi.version>1.2.24</springdoc-openapi.version>
 		<spring-support.version>2.0.8</spring-support.version>
 		<appengine.maven.plugin>2.2.0</appengine.maven.plugin>
 	</properties>
@@ -64,14 +64,9 @@
 
 		<!-- Swagger API Documentation -->
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>${springfox-swagger2.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>${springfox-swagger2.version}</version>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${springdoc-openapi.version}</version>
 		</dependency>
 
 		<!-- Yahoo Finance API -->
